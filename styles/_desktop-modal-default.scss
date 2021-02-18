@@ -1,0 +1,261 @@
+#desktop-design-modal-default {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.178);
+  z-index: 9999;
+  overflow-y: hidden;
+
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  #desktop-design-modal-default-content {
+    width: 700px;
+    height: 90%;
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 10px;
+    overflow-y: auto;
+
+    #desktop-modal-top {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+
+      div {
+        top: -20px;
+        position: relative;
+
+        button {
+          background-color: transparent;
+          border: 0;
+          outline: none;
+
+          cursor: pointer;
+        }
+      }
+    }
+
+    p {
+      color: var(--darkGray);
+      margin: 20px 0;
+      font-size: 15px;
+    }
+
+    .modal-card-container {
+      margin-top: 20px;
+    }
+
+    #modal-id-card-1:checked {
+      background-color: red !important;
+    }
+
+    .modal-card {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 30px 15px 30px;
+      margin-bottom: 20px;
+      position: relative;
+      cursor: pointer;
+      // opacity: 60%;
+
+      width: 100%;
+      height: auto;
+
+      border: 1px solid rgb(236, 236, 236);
+
+      background-color: #ffffff;
+      border-radius: 10px;
+
+      // &:focus {
+        
+      // }
+
+      .modal-card-h3-radio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+      //   div {
+      //     .modal-radio-2:focus {
+      //       #div-enter-pledge-2 {
+      //         display: block !important;
+      //       }
+      //     }
+      // }
+      
+
+        .span-title {
+          font-weight: 700;
+          margin-left: 20px;
+          font-size: 20px;
+        }
+
+        .span-pledge{
+          margin-left: 15px;
+          color: var(--moderateCyan);
+          font-weight: 500;
+        }
+
+        .div-span-left {
+          display: flex;
+          align-items: center;
+          height: 0;
+
+          .p-left {
+            color: black;
+            margin-right: 8px;
+            font-weight: 500;
+            font-size: 20px;
+          }
+        }
+
+        .modal-radio {
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          border: 5px solid rgb(236, 236, 236);
+          border-radius: 50%;
+        }
+
+        .modal-radio:after {
+          background: var(--darkCyan);
+          top: 9px;
+          left: 9px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+        }
+      }
+
+      p {
+        line-height: 30px;
+        font-size: 15px;
+      }
+
+      .div-class-card-enter-pledge {
+        padding-top: 20px;
+        border-top: 1px solid rgb(236, 236, 236);
+        z-index: 9999999;
+        display: none;
+        
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          span {
+            color: var(--darkGray);
+          }
+
+          div{
+            justify-content: space-between;
+            width: 190px;
+
+            .label-input {
+              display: flex;
+              position: relative;
+
+              span {
+                position: absolute;
+                top: 10px;
+                left: 12px;
+                color: var(--darkGray);
+              }
+
+              input {
+                width: 90px;
+                height: 40px;
+                border-radius: 50px;
+                outline: none;
+                appearance: none;
+
+                padding: 0 0 0 30px;
+  
+                border: 1px solid var(--darkCyan);
+              }
+
+              input::-webkit-outer-spin-button,
+              input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+
+              input[type=number] {
+                -moz-appearance: textfield;
+              }
+            }
+            
+            button {
+              width: 90px;
+              height: 40px;
+              border-radius: 50px;
+              outline: none;
+
+              background-color: var(--darkCyan);
+              color: white;
+              font-weight: 700;
+
+              border: 0;
+            }
+          }  
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  #desktop-design-modal-default-content {
+    width: 450px !important;
+    height: 90% !important;
+    overflow-y: auto;
+  }
+
+  #desktop-modal-div-button-img {
+    top: -10px !important;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  #desktop-design-modal-default-content {
+    width: 330px !important;
+
+    padding: 20px 30px !important;
+
+    .span-title {
+      font-size: 16px !important;
+    }
+
+    .modal-card {
+      padding: 20px 30px 30px 30px !important;
+    }
+
+    .div-span-left {
+      position: absolute;
+      bottom: 24px;
+    }
+
+    .div-class-card-enter-pledge {
+      div {
+        align-items: flex-start !important;
+
+        div {
+          flex-direction: column;
+          margin-left: 10px;
+
+          input {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      
+    }
+    
+
+  }
+}

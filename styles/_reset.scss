@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey);
+  font-family: "Commissioner", sans-serif;
+}
+
+:root {
+  --darkGray: hsl(0, 0%, 48%);
+  --moderateCyan: hsl(176, 50%, 47%);
+  --darkCyan: hsl(176, 72%, 28%);
+  --grey: #fafafa;
+}

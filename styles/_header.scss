@@ -1,0 +1,72 @@
+#div-options-header-mobile {
+  display: none !important;
+}
+
+#div-button-hamburguer {
+  display: none;
+}
+
+header {
+  background-image: url("../images/image-hero-desktop.jpg");
+  background-size: cover;
+  height: 400px;
+  z-index: 0;
+  
+  #header-gradient {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 1;
+
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 255, 0) 20%) no-repeat;
+  }
+
+  #header-wrapper {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  #div-header-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    margin: 35px;
+  }
+
+  #div-ul {
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      list-style: none;
+
+      li + li{
+        margin-left: 25px;
+      }
+
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+
+          :hover {
+            color: grey;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  
+}
